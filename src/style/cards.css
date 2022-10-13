@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500;700&display=swap');
+
+.cover_global{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1240px;
+    padding: 50px;
+    margin: 0 auto;
+    padding: 25px 0px 25px 0px;
+    border-radius: 25px;
+    background-color: #F6F6F6;
+}
+.cover_logement{
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 340px;
+    height: 340px;
+    background: linear-gradient(to top, #F5F5F5, rgba(255,255,255,0));
+}
+.cover_title{
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    width: 340px;
+    padding: 20px;
+    border-radius: 10px; 
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;  
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.cover_img{
+    position: absolute;
+    object-fit: cover;
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+}
+
+
+
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 991px){ 
+
+}
+
+/*MOBILE*/
+@media screen and (max-width: 767px){ 
+
+}

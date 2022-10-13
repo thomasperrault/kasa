@@ -1,4 +1,4 @@
-.D404{
+.Error404{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,16 +7,16 @@
     font-family: "Montserrat";
     color: #FF6060;   
 }
-.D404_code{
+.Error404_code{
     font-size: 288px;
     font-weight: 900 !important;
 }
-.D404_message{
+.Error404_message{
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 100px;
 }
-.D404_link{
+.Error404_link{
     font-size: 18px;
     font-weight: 500;
     text-decoration: underline;
@@ -26,32 +26,32 @@
 
 /*TABLET*/
 @media screen and (min-width: 768px) and (max-width: 991px){ 
-    .D404_code{
+    .Error404_code{
         font-size: 96px;
     }
-    .D404_message{
+    .Error404_message{
         font-size: 18px;
     }
-    .D404_link{
+    .Error404_link{
         font-size: 14px;
     }
 }
 
 /*MOBILE*/
 @media screen and (max-width: 767px){
-    .D404{
+    .Error404{
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 600px; 
     } 
-    .D404_code{
+    .Error404_code{
         font-size: 96px;
     }
-    .D404_message{
+    .Error404_message{
         font-size: 18px;
     }
-    .D404_link{
+    .Error404_link{
         font-size: 14px;
     }
 }
