@@ -8,9 +8,8 @@ function JsonDataDisplay(){
     const DisplayData=JsonDataLogements.map(
         (info)=>{
             return(
-                <div className="cover_logement" key={info.id} >
-                    <p className="cover_title"> {info.title} </p>
-                    <img className="cover_img" src={info.cover} alt="cover"/>
+                <div className="cover_logement" key={info.id} style={{backgroundImage: `url(${info.cover})`}}>
+                    <p className="cover_title"> {info.title} </p>                 
                 </div>
             )
         }
