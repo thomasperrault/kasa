@@ -1,14 +1,16 @@
 import React from "react";
 import JsonDataDisplay from "../components/Cards"
-import HomeSloganImg from "../img/home_slogan_img.png"
 import '../style/home.css';
 
 
 const Home = () => (
     <>
-        <section className="home_slogan">
-            <h1 className="home_slogan_txt">Chez vous, partout et ailleurs</h1>
-            <img src={HomeSloganImg} alt="Paysage de bord de mer"/>
+        <section className="home">
+            <div className="home__background">
+                <h1 className="home__title--desktop">Chez vous, partout et ailleurs</h1>
+                <h1 className="home__title--mobile">Chez vous, <br></br>
+                partout et ailleurs</h1>
+            </div>
         </section>
         <JsonDataDisplay/>
     </>
