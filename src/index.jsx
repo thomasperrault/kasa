@@ -6,4 +6,3 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './components/App';
 
 createRoot(document.getElementById('root')).render(<App />)
-
