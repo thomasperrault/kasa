@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import JsonDataLogements from '../logements.json'
 import '../style/cards.css';
 
@@ -8,9 +9,9 @@ function JsonDataDisplay(){
     const DisplayData=JsonDataLogements.map(
         (info)=>{
             return(
-                <div className="cover_logement" key={info.id} style={{backgroundImage: `url(${info.cover})`}}>
+                <Link className="cover_logement" key={info.id} to={`/logement/${info.id}`} style={{backgroundImage: `url(${info.cover})`}}>
                     <p className="cover_title"> {info.title} </p>                 
-                </div>
+                </Link>
             )
         }
     )
