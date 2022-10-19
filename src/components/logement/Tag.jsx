@@ -1,11 +1,17 @@
 import React from 'react'
-import '../../style/house.css';
+import '../../style/tag.css';
 
 function Tags ({tags}) {
 		return (
-			<>
-				<p className="logement__tags">{tags}</p>
-			</>
+			<div id = "tags">
+                {tags.map((tag)=> {
+                    return (
+                        <span className="tag" key={`${tag}`}>
+                            {tag}
+                        </span>
+                    );
+                })}
+           	</div>
 		);
 	};
 	

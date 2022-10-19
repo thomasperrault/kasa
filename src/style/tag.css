@@ -1,0 +1,17 @@
+#tags{
+    display: flex;
+    width: 100%;
+}
+.tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    padding: 0px 20px 0px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: #fff;
+    background-color: #ff6060;
+}
