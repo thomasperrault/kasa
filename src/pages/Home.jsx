@@ -1,5 +1,5 @@
 import React from "react";
-import JsonDataDisplay from "../components/Cards"
+import JsonDataCards from "../components/Cards"
 import '../style/home.css';
 
 
@@ -12,8 +12,8 @@ const Home = () => (
                 partout et ailleurs</h1>
             </div>
         </section>
-        <JsonDataDisplay/>
+        <JsonDataCards/>
     </>
 )
 
-export default Home
+export default Home 

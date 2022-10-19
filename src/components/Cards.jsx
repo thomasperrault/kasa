@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import JsonDataLogements from '../logements.json'
+import Logements from '../logements.json'
 import '../style/cards.css';
 
-console.log(JsonDataLogements);
+console.log(Logements);
 
-function JsonDataDisplay(){
-    const DisplayData=JsonDataLogements.map(
+function JsonDataCards(){
+    const DisplayData=Logements.map(
         (info)=>{
             return(
                 <Link className="cover_logement" key={info.id} to={`/logement/${info.id}`} style={{backgroundImage: `url(${info.cover})`}}>
@@ -25,5 +25,5 @@ function JsonDataDisplay(){
     )
  }
  
- export default JsonDataDisplay;
+ export default JsonDataCards;
 
