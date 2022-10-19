@@ -1,12 +1,12 @@
 import React from 'react'
-import '../../style/house.css';
+import '../../style/host.css';
 
 function Host ({host}) {
     return (
         <>
-            <div id="host__tag">
-                    <p id="host__tag__name">{host.name}</p>
-                    <img src={host.picture} alt="{host.name}" id="host__tag__image" />
+            <div className="host__info">
+                    <p className="host__name">{host.name}</p>
+                    <img src={host.picture} alt="{host.name}" className="host__image" />
             </div>
         </>
     );

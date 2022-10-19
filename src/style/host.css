@@ -1,0 +1,21 @@
+.host__info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.host__name{
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 500;
+    margin: auto 20px auto 0px;
+}
+.host__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    border-radius: 50%;
+}
+.rate__star{
+    margin-left: 10px;
+}
