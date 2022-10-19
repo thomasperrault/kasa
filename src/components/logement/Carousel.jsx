@@ -1,5 +1,5 @@
 import React, {useState, } from 'react'
-import '../style/carousel.css';
+import '../../style/carousel.css';
 
 function Carousel({pictures}) {
 	const [locPict, setlocPict] = useState(0)

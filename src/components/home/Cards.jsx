@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Logements from '../logements.json'
-import '../style/cards.css';
+import Logements from '../../logements.json'
+import '../../style/cards.css';
 
 console.log(Logements);
 

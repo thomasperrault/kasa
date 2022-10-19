@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/house.css';
+import '../../style/house.css';
 
 function Rate ({rating}) {
 	const stars = [1,2,3,4,5]

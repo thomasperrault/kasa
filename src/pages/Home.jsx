@@ -1,5 +1,5 @@
 import React from "react";
-import JsonDataCards from "../components/Cards"
+import JsonDataCards from "../components/home/Cards"
 import '../style/home.css';
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/house.css';
+import '../../style/house.css';
 
 function Tags ({tags}) {
 		return (

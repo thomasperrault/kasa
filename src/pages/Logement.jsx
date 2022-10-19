@@ -1,10 +1,10 @@
 import React from "react";
-import Carousel from "../components/Carousel";
-import Logement from "../components/House";
-import Tags from "../components/Tag"; //A REPRENDRE A REPRENDRE A REPRENDRE
-import Host from "../components/Host"; //A REPRENDRE A REPRENDRE A REPRENDRE
-import Rate from "../components/Rate"; //A REPRENDRE A REPRENDRE A REPRENDRE
-import Details from "../components/Details"; //A REPRENDRE A REPRENDRE A REPRENDRE
+import Carousel from "../components/logement/Carousel";
+import Logement from "../components/logement/House";
+import Tags from "../components/logement/Tag"; //A REPRENDRE A REPRENDRE A REPRENDRE
+import Host from "../components/logement/Host"; //A REPRENDRE A REPRENDRE A REPRENDRE
+import Rate from "../components/logement/Rate"; //A REPRENDRE A REPRENDRE A REPRENDRE
+import Details from "../components/logement/Details"; //A REPRENDRE A REPRENDRE A REPRENDRE
 
 import { useParams } from 'react-router-dom';
 import Logements from '../logements.json'
