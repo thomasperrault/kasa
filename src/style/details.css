@@ -1,6 +1,6 @@
 .info__collapse {
     margin-bottom: 0px;
-    width: 47%;
+    width: 48%;
 }
 .collapse__title {
     display: flex;
@@ -26,4 +26,38 @@ details[open] .collapse__title .fa-chevron-down {
     font-weight: 400;
     color: #FF6060;
     list-style: none;
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 991px){ 
+    .info__collapse {
+        margin-top: 5px;
+        width: 49%;
+    }
+    .collapse__title {
+        font-size: 16px;
+        padding: 10px 10px 10px 10px;
+    }
+    .collapse__text {
+        font-size: 15px;
+        padding: 10px 10px 10px 10px;
+    }
+}
+
+/*MOBILE*/
+@media screen and (max-width: 767px){ 
+    .info__collapse {
+        margin-top: 25px;
+        width: 100%;
+    }
+    .collapse__title {
+        font-size: 15px;
+        padding: 10px 10px 10px 10px;
+        border-radius: 5px;
+    }
+    .collapse__text {
+        font-size: 14px;
+        padding: 10px 10px 10px 10px;
+        border-radius: 0px 0px 5px 5px ;
+    }
 }

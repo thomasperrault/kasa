@@ -19,3 +19,35 @@
 .rate__star{
     margin-left: 10px;
 }
+
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 991px){ 
+    .host__image{
+        height: 48px;
+    }
+    .host__name{
+        font-size: 15px;
+        margin: auto 15px auto 0px;
+    }
+    .rate__star{
+        margin-left: 5px;
+        scale: 0.9;
+    }
+}
+
+/*MOBILE*/
+@media screen and (max-width: 767px){ 
+    .host__image{
+        height: 32px;
+    }
+    .host__name{
+        font-size: 12px;
+        margin: auto 10px auto 0px;
+    }
+    .rate__star{
+        margin-left: 0px;
+        scale: 0.7;
+    }
+}
+
+

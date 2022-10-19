@@ -22,11 +22,29 @@
     align-items: flex-end;
     width: 35%;
     color: #ff6060;
-
 }
 .info__details{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 30px;
+}
+/*MOBILE*/
+@media screen and (max-width: 767px){ 
+    .info__general{
+        flex-direction: column;
+        margin-top: 5px;
+    }
+    .info__host{
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .info__details{
+        flex-direction: column;
+    }
+    .info__logement{
+        width: 100%;
+    }
 }

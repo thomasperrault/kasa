@@ -15,3 +15,20 @@
     color: #fff;
     background-color: #ff6060;
 }
+
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 991px){ 
+    
+}
+
+/*MOBILE*/
+@media screen and (max-width: 767px){ 
+    .tag{
+        height: 20px;
+        padding: 0px 10px 0px 10px;
+        margin: 10px 5px 0px 0px;
+        margin-right: 5px;
+        border-radius: 5px;
+        font-size: 13px;
+    }
+}
