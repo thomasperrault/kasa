@@ -17,19 +17,12 @@
     border-radius: 25px;
     background-color: rgb(0, 0, 0, 0.3);
 }
-
 .apropos__info{
     display: flex;
     flex-direction: column;
     max-width: 1240px;
     width: auto;    
 }
-
-.info__details {
-    margin-bottom: 30px;
-    user-select: none;
-}
-
 .info__title {
     display: flex;
     justify-content: space-between;
@@ -43,17 +36,14 @@
     font-weight: 500;
     color: #ffffff;
 }
-
 details[open] .info__title .fa-chevron-down {
     transform: rotate(-180deg);
 }
-
 .info__text {
     background-color: #f6f6f6;
     margin: 0px 150px 0px 150px;
     padding: 20px 10px 20px 20px;
     border-radius: 0px 0px 5px 5px ;
-
     font-family: "Montserrat";
     font-size: 24px;
     font-weight: 400;
