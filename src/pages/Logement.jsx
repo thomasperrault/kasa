@@ -17,24 +17,22 @@ function LogementSheet() {
     const { title , location, tags , host, rating, pictures, description, equipments} = infoLogement
      return (
         <>
-            <Carousel pictures={pictures}/>
-            <div>
-                <div>
+            <section className="carousel">
+                <Carousel pictures={pictures}/>
+            </section>
+            <section className="info__general">
+                <div className="info__logement">
                     <Logement title={title} location={location}/>
                     <Tags tags={tags}/>
                 </div>
-                <div>
-                    <div>
-                        <Host host={host}/>
-                    </div>
-                    <div>
-                        <Rate rating={rating}/>
-                    </div>
+                <div className="info__host">
+                    <Host host={host}/>
+                    <Rate rating={rating}/>
                 </div>
-            </div>
-            <div>
+            </section>
+            <section className="info__details">
                 <Details description={description} equipments={equipments}/>
-            </div>
+            </section>
         </>
     ) 
     }else{

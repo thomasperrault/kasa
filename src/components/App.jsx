@@ -8,21 +8,19 @@ import Apropos from "../pages/Apropos";
 import Logement from "../pages/Logement";
 import '../style/app.css';
 
-
-
 class App extends React.Component{
     render(){
         return(
-                <BrowserRouter>
-                    <Header />
-                    <Routes>
-                        <Route exact path="/" element={<Home/>} />
-                        <Route path="/logement/:id" element={<Logement/>} />
-                        <Route path="/a-propos" element={<Apropos/>} />
-                        <Route path="/*" element={<Error404/>} />
-                    </Routes>
-                    <Footer />
-                </BrowserRouter>
+            <BrowserRouter>
+                <Header />
+                <Routes>
+                    <Route exact path="/" element={<Home/>} />
+                    <Route path="/logement/:id" element={<Logement/>} />
+                    <Route path="/a-propos" element={<Apropos/>} />
+                    <Route path="/*" element={<Error404/>} />
+                </Routes>
+                <Footer />
+            </BrowserRouter>
         )
     }
 }
