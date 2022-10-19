@@ -5,7 +5,7 @@
     max-width: 1240px;
     margin: 0 auto 50px auto;
     border-radius: 25px;
-    background-image: url(../img/home_background.png);  
+    background-image: url(../../img/home_background.png);  
 }
 .home__background {
     display: flex;
@@ -33,7 +33,7 @@
         margin: 0 auto 35px auto;
         background-size: cover;
         background-position-x: center;
-        background-image: url(../img/home_background.png);  
+        background-image: url(../../img/home_background.png);  
     }
     .home__background {
         width: auto;
@@ -53,7 +53,7 @@
         border-radius: 10px;
         background-size: cover;
         background-position-x: center;
-        background-image: url(../img/home_background.png);  
+        background-image: url(../../img/home_background.png);  
     }
     .home__background {
         justify-content: flex-start;

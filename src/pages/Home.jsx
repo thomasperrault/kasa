@@ -1,6 +1,6 @@
 import React from "react";
 import JsonDataCards from "../components/home/Cards"
-import '../style/home.css';
+import '../style/home/home.css';
 
 
 const Home = () => (

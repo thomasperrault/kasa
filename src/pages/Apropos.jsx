@@ -3,7 +3,7 @@ import Fiability from "../components/apropos/Fiability"
 import Respect from "../components/apropos/Respect"
 import Service from "../components/apropos/Service"
 import Security from "../components/apropos/Security"
-import '../style/apropos.css';
+import '../style/apropos/apropos.css';
 
 const Apropos = () => (
     <div className="apropos">

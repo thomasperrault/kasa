@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../style/apropos.css';
+import '../../style/apropos/apropos.css';
 
 function AccordionRespect() { 
     return (

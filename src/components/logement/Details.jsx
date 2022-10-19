@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../style/details.css';
+import '../../style/logement/details.css';
 
 function Details ({description, equipments}) {
   return (

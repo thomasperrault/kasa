@@ -6,7 +6,7 @@
     margin: 0 auto 50px auto;
     border-radius: 25px;
     background-size: cover;
-    background-image: url(../img/apropos_background.png);  
+    background-image: url(../../img/apropos_background.png);  
 }
 .apropos__background {
     display: flex;
@@ -57,7 +57,7 @@ details[open] .info__title .fa-chevron-down {
         margin: 0 auto 35px auto;
         background-size: cover;
         background-position-x: center;
-        background-image: url(../img/apropos_background.png);  
+        background-image: url(../../img/apropos_background.png);  
     }
     .apropos__background {
         width: auto;
@@ -83,7 +83,7 @@ details[open] .info__title .fa-chevron-down {
         border-radius: 10px;
         background-size: cover;
         background-position-x: center;
-        background-image: url(../img/apropos_background.png);  
+        background-image: url(../../img/apropos_background.png);  
     }
     .apropos__background {
         justify-content: flex-start;
