@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500;700&display=swap');
+
+.apropos__banner {
+    height: 223px;
+    max-width: 1240px;
+    margin: 0 auto 50px auto;
+    border-radius: 25px;
+    background-size: cover;
+    background-image: url(../img/apropos_background.png);  
+}
+.apropos__background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.apropos__info{
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    width: auto;    
+}
+
+.info__details {
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+.info__title {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 150px 0px 150px;
+    padding: 10px 10px 10px 20px;
+    background-color: #FF6060;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+details[open] .info__title .fa-chevron-down {
+    transform: rotate(-180deg);
+}
+
+.info__text {
+    background-color: #f6f6f6;
+    margin: 0px 150px 0px 150px;
+    padding: 20px 10px 20px 20px;
+    border-radius: 0px 0px 5px 5px ;
+
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 400;
+    color: #FF6060;
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 991px){ 
+    .apropos__banner {
+        height: 223px;
+        margin: 0 auto 35px auto;
+        background-size: cover;
+        background-position-x: center;
+        background-image: url(../img/apropos_background.png);  
+    }
+    .apropos__background {
+        width: auto;
+        background-color: rgb(0, 0, 0, 0.3);
+    }
+    .apropos__title--desktop{
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .info__title {
+        margin: 0px 0px 0px 0px;
+    }
+    .info__text {
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+/*MOBILE*/
+@media screen and (max-width: 767px){ 
+    .apropos__banner {
+        height: 223px;
+        margin: 0 auto 22px auto;
+        border-radius: 10px;
+        background-size: cover;
+        background-position-x: center;
+        background-image: url(../img/apropos_background.png);  
+    }
+    .apropos__background {
+        justify-content: flex-start;
+        width: auto;
+        height: 100%;
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0, 0.3);
+    }
+    .apropos__title--desktop{
+        display: none;
+    }
+    .apropos__title--mobile{
+        display: flex;
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-weight: 500;
+        margin-left: 16px;
+        color: rgb(255, 255, 255);
+    }
+    .info__title {
+        margin: 0px 0px 0px 0px;
+    }
+    .info__text {
+        margin: 0px 0px 0px 0px;
+    }
+}

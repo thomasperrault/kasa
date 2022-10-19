@@ -9,9 +9,6 @@ const Apropos = () => (
     <div className="apropos">
         <section className="apropos__banner">
             <div className="apropos__background">
-                <h1 className="apropos__title--desktop">Chez vous, partout et ailleurs</h1>
-                <h1 className="apropos__title--mobile">Chez vous, <br></br>
-                partout et ailleurs</h1>
             </div>
         </section>
         <section className="apropos__info">
@@ -20,7 +17,6 @@ const Apropos = () => (
             <Service/>
             <Security/>
         </section>
-        
     </div>
 )
 
