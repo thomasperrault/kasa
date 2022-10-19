@@ -1,10 +1,12 @@
 import React from "react";
 import Carousel from "../components/logement/Carousel";
 import Logement from "../components/logement/House";
-import Tags from "../components/logement/Tag"; //A REPRENDRE A REPRENDRE A REPRENDRE
-import Host from "../components/logement/Host"; //A REPRENDRE A REPRENDRE A REPRENDRE
-import Rate from "../components/logement/Rate"; //A REPRENDRE A REPRENDRE A REPRENDRE
-import Details from "../components/logement/Details"; //A REPRENDRE A REPRENDRE A REPRENDRE
+import Tags from "../components/logement/Tag"; 
+import Host from "../components/logement/Host"; 
+import Rate from "../components/logement/Rate"; 
+import Details from "../components/logement/Details"; 
+
+import '../style/logement.css';
 
 import { useParams } from 'react-router-dom';
 import Logements from '../logements.json'
@@ -16,13 +18,15 @@ function LogementSheet() {
     if(infoLogement !==undefined) {
     const { title , location, tags , host, rating, pictures, description, equipments} = infoLogement
      return (
-        <>
+        <section className="logement">
             <section className="carousel">
                 <Carousel pictures={pictures}/>
             </section>
             <section className="info__general">
                 <div className="info__logement">
-                    <Logement title={title} location={location}/>
+                    <div className="=info__logement__general">
+                        <Logement title={title} location={location}/>
+                    </div>
                     <Tags tags={tags}/>
                 </div>
                 <div className="info__host">
@@ -33,7 +37,7 @@ function LogementSheet() {
             <section className="info__details">
                 <Details description={description} equipments={equipments}/>
             </section>
-        </>
+        </section>
     ) 
     }else{
         window.location.href ="/404";    

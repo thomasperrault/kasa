@@ -1,0 +1,32 @@
+.logement{
+    display: flex;
+    flex-direction: column;
+}
+.info__general{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.info__logement{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+    color: #ff6060;
+}
+.info__host{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 35%;
+    color: #ff6060;
+
+}
+.info__details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
