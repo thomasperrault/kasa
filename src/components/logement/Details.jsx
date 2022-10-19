@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../style/house.css';
+import '../../style/details.css';
 
 function Details ({description, equipments}) {
   return (
@@ -8,7 +8,7 @@ function Details ({description, equipments}) {
 			<summary className="collapse__title">Description <i className="fa-solid fa-chevron-down"></i></summary>
 			<p className="collapse__text">{description}</p>
 		</details>
-		<details className="info__collapse">
+		<details className="info__collapse equipment">
 			<summary className="collapse__title">Équipements <i className="fa-solid fa-chevron-down"></i></summary>
 			<ul className="collapse__text">
 				{equipments.map ((equipment)=>{
