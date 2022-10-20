@@ -13,29 +13,45 @@ function Carousel({pictures}) {
 	const previousPicture = () =>{
 		setlocPict(locPict === 0 ? pictures.length -1 : locPict -1);
 	}
-
-	return (
-		<>
-			{/* Gestion des chevrons de navigation*/}
-			{pictures.length > 1 && <i className="fa-solid fa-chevron-left" onClick={previousPicture}></i>}
-			{pictures.length > 1 && <i className="fa-solid fa-chevron-right" onClick={nextPicture}></i>}
-			
-			{/* Ajout des images du carousel */}
-			{pictures.map ((img, index) =>{
-				return (
-					<div key ={index}>
-						{index === locPict && <img src={img} alt= "Photos du logement" className='carousel__image'/>}
-						{index === locPict && (
-							/* Ajout du numéro de l'image */
-							<span className='carousel__number'>
-								{locPict +1 }/{pictures.length}
-							</span>
-						)}            
-					</div>
-				)
-			})}      
-		</>
-	)
+	if(pictures.length>1){
+		return (
+			<>
+				{/* Gestion des chevrons de navigation*/}
+				{pictures.length > 1 && <i className="fa-solid fa-chevron-left" onClick={previousPicture}></i>}
+				{pictures.length > 1 && <i className="fa-solid fa-chevron-right" onClick={nextPicture}></i>}
+				
+				{/* Ajout des images du carousel */}
+				{pictures.map ((img, index) =>{
+					return (
+						<div key ={index}>
+							{index === locPict && <img src={img} alt= "Photos du logement" className='carousel__image'/>}
+							{index === locPict && (
+								/* Ajout du numéro de l'image */
+								<span className='carousel__number'>
+									{locPict +1 }/{pictures.length}
+								</span>
+							)}            
+						</div>
+					)
+				})}      
+			</>
+		)
+	}
+	else{
+		return (
+			<>
+				{/* Ajout des images du carousel */}
+				{pictures.map ((img, index) =>{
+					return (
+						<div key ={index}>
+							{index === locPict && <img src={img} alt= "Photos du logement" className='carousel__image'/>}        
+						</div>
+					)
+				})}      
+			</>
+		)
+	}
+	
 }
 
 export default Carousel; 
