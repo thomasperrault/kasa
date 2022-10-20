@@ -6,8 +6,8 @@ a:hover{color:#FF6060; text-decoration: underline;}
 .header{
     display: flex;
     justify-content: space-between;
-    max-width: 1340px;
-    margin: 40px 0px 63px 0px;
+    max-width: 1240px;
+    margin: 40px auto 63px auto;
     align-items: center;
     font-family: "Montserrat";
     font-size: 17px;

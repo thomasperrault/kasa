@@ -4,6 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 1240px;
+    margin:  auto ;
     padding: 20px;
     border-radius: 25px;
     background-color: #F6F6F6;
