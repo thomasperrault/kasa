@@ -1,14 +1,14 @@
 import React from "react";
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Header from "./Header";
-import Footer from "./Footer";
-import Home from "../pages/Home";
-import Error404 from "../pages/Error404";
-import Apropos from "../pages/Apropos";
-import Logement from "../pages/Logement";
-import '../style/app.css';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Error404 from "./pages/Error404";
+import Apropos from "./pages/Apropos";
+import Logement from "./pages/Logement";
+import './style/app.css';
 
-class App extends React.Component{
+class Router extends React.Component{
     render(){
         return(
             <BrowserRouter>
@@ -25,4 +25,4 @@ class App extends React.Component{
     }
 }
 
-export default App
+export default Router
