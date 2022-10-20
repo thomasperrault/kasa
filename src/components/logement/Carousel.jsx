@@ -2,33 +2,35 @@ import React, {useState, } from 'react'
 import '../../style/logement/carousel.css';
 
 function Carousel({pictures}) {
-	const [locPict, setlocPict] = useState(0)
+	const [locationPicture, setLocationPicture] = useState(0)
 
-	/* Appel de l'image suivantes */
+	/* Fonction d'appel de l'image suivante avec boucle */
 	const nextPicture = () =>{
-		setlocPict(locPict === pictures.length -1 ? 0 : locPict +1)
+		//pictures.lenght mis à zéro lorsqu'on arrive au bout de la liste
+		setLocationPicture(locationPicture === pictures.length -1 ? 0 : locationPicture +1)
 	}
 
-	/* Appel l'image précédente */
-	const previousPicture = () =>{
-		setlocPict(locPict === 0 ? pictures.length -1 : locPict -1);
+	/* Fonction d'appel de l'image précédente avec boucle */
+	const previousPicture = () =>{		
+		setLocationPicture(locationPicture === 0 ? pictures.length -1 : locationPicture -1);
 	}
+	//Fonction SI pour déterminer la présence des chevrons et numéro s'il y a une seule image
 	if(pictures.length>1){
 		return (
 			<>
-				{/* Gestion des chevrons de navigation*/}
-				{pictures.length > 1 && <i className="fa-solid fa-chevron-left" onClick={previousPicture}></i>}
-				{pictures.length > 1 && <i className="fa-solid fa-chevron-right" onClick={nextPicture}></i>}
+				{/* Chevrons de navigation*/}
+				{<i className="fa-solid fa-chevron-left" onClick={previousPicture}></i>}
+				{<i className="fa-solid fa-chevron-right" onClick={nextPicture}></i>}
 				
 				{/* Ajout des images du carousel */}
 				{pictures.map ((img, index) =>{
 					return (
 						<div key ={index}>
-							{index === locPict && <img src={img} alt= "Photos du logement" className='carousel__image'/>}
-							{index === locPict && (
+							{index === locationPicture && <img src={img} alt= "Photos du logement" className='carousel__image'/>}
+							{index === locationPicture && (
 								/* Ajout du numéro de l'image */
 								<span className='carousel__number'>
-									{locPict +1 }/{pictures.length}
+									{locationPicture +1 }/{pictures.length}
 								</span>
 							)}            
 						</div>
@@ -44,7 +46,7 @@ function Carousel({pictures}) {
 				{pictures.map ((img, index) =>{
 					return (
 						<div key ={index}>
-							{index === locPict && <img src={img} alt= "Photos du logement" className='carousel__image'/>}        
+							{index === locationPicture && <img src={img} alt= "Photos du logement" className='carousel__image'/>}        
 						</div>
 					)
 				})}      

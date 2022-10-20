@@ -12,10 +12,13 @@ import { useParams } from 'react-router-dom';
 import Logements from '../logements.json'
 
 function LogementSheet() {
+    //Récupération de l'id dans l'URL
     const {id} = useParams();
+    //Récupération des données avec la fonction FIND
     const infoLogement = Logements.find ((logement)=> logement.id === id) 
      
     if(infoLogement !==undefined) {
+    //Appel de toutes les infos pour ne pas les appelers dans chaques components
     const { title , location, tags , host, rating, pictures, description, equipments} = infoLogement
      return (
         <section className="logement">

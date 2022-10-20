@@ -8,11 +8,13 @@ import Apropos from "./pages/Apropos";
 import Logement from "./pages/Logement";
 import './style/app.css';
 
+//Utilisation de React Routeur Dom
 class Router extends React.Component{
     render(){
         return(
             <BrowserRouter>
                 <Header />
+                {/*Route remplace Switch*/}
                 <Routes>
                     <Route exact path="/" element={<Home/>} />
                     <Route path="/logement/:id" element={<Logement/>} />
