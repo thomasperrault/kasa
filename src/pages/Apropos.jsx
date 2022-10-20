@@ -1,16 +1,13 @@
 import React from "react";
+import BannerApropos from "../components/apropos/Banner_Apropos"
 import Fiability from "../components/apropos/Fiability"
 import Respect from "../components/apropos/Respect"
 import Service from "../components/apropos/Service"
 import Security from "../components/apropos/Security"
-import '../style/apropos/apropos.css';
 
 const Apropos = () => (
     <div className="apropos">
-        <section className="apropos__banner">
-            <div className="apropos__background">
-            </div>
-        </section>
+        <BannerApropos/>
         <section className="apropos__info">
             <Fiability/>
             <Respect/>

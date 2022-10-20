@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import Logements from '../../logements.json'
 import '../../style/home/cards.css';
 
-console.log(Logements);
-
 function JsonDataCards(){
     const DisplayData=Logements.map(
         (info)=>{
