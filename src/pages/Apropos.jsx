@@ -1,9 +1,9 @@
 import React from "react";
 import BannerApropos from "../components/apropos/Banner_Apropos"
-import Fiability from "../components/apropos/Fiability"
-import Respect from "../components/apropos/Respect"
-import Service from "../components/apropos/Service"
-import Security from "../components/apropos/Security"
+import Fiability from "../components/apropos/Collapse_Fiability"
+import Respect from "../components/apropos/Collapse_Respect"
+import Service from "../components/apropos/Collapse_Service"
+import Security from "../components/apropos/Collapse_Security"
 
 const Apropos = () => (
     <div className="apropos">

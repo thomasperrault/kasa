@@ -4,7 +4,7 @@ import Logement from "../components/logement/House";
 import Tags from "../components/logement/Tag"; 
 import Host from "../components/logement/Host"; 
 import Rate from "../components/logement/Rate"; 
-import Details from "../components/logement/Details"; 
+import Details from "../components/logement/Collapse_Details"; 
 
 import '../style/logement/logement.css';
 

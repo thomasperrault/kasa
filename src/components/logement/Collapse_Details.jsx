@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../style/logement/details.css';
 
-function Details ({description, equipments}) {
+function Collapse_Details ({description, equipments}) {
   return (
 	  	<>
 			{/*<detail> élément de divulgation des détails*/}
@@ -23,4 +23,4 @@ function Details ({description, equipments}) {
   );
 };
   
-export default Details;
+export default Collapse_Details;
