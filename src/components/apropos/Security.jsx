@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../style/apropos/apropos.css';
 
-function AccordionFiability() {
+function CollapseSecurity() {
     return (
     /*<detail> élément de divulgation des détails*/
     <details className="info__details security">
@@ -17,4 +17,4 @@ function AccordionFiability() {
   )
 }
 
-export default AccordionFiability;
+export default CollapseSecurity;

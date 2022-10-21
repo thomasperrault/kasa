@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../style/apropos/apropos.css';
 
-function AccordionRespect() { 
+function CollapseRespect() { 
     return (
     /*<detail> élément de divulgation des détails*/
     <details className="info__details respect">
@@ -17,4 +17,4 @@ function AccordionRespect() {
   )
 }
 
-export default AccordionRespect;
+export default CollapseRespect;
