@@ -1,8 +1,6 @@
 # Find "Routes.jsx"
 
 The route file is in the folder: 
-
-Runs the app in the development mode.\
 /Kasa/src/Route.jsx
 
 # Getting Started with Create React App
